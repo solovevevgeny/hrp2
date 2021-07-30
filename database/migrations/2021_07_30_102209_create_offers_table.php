@@ -18,6 +18,7 @@ class CreateOffersTable extends Migration
             $table->string('xml_id');
             $table->string("title");
             $table->unsignedBigInteger("parent_id");
+            $table->unsignedBigInteger("warehouse_id")->fillable();
             $table->timestamps();
         });
     }
