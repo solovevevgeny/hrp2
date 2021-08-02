@@ -16,7 +16,9 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string("xml_id")->fillable();
+            $table->string("title")->fillable();
             $table->unsignedBigInteger("category_id")->default(0);
+            $table->string("category_xml_id");
             $table->string("OEM")->fillable();
             $table->string("OEMCross")->nullable();
             $table->string("comment")->nullable();
