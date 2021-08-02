@@ -27,10 +27,8 @@ class OffersSeeder extends Seeder
         $offer->title = "Воздуховод отопителя";
         $offer->parent_id = 1;
         $offer->warehouse_id = 2;
-        $offer->count = 20;
+        $offer->count = 10;
         $offer->save();
-
-
 
     }
 }
