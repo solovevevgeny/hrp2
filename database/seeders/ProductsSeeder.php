@@ -19,6 +19,7 @@ class ProductsSeeder extends Seeder
         $product->xml_id = "4856a318-82e8-11ea-80d7-0cc47a817b0f";
         $product->title = "Воздуховод отопителя";
         $product->category_xml_id = "f9ad82d5-731d-11ea-80d7-0cc47a817b0f";
+        $product->category_id = 1;
         $product->OEM = "3175648";
         $product->save();
 
