@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get("/product", "\App\Http\Controllers\ProductController@index");
+Route::get("/products", "\App\Http\Controllers\ProductController@index");
+Route::get("/product/{id}", '\App\Http\Controllers\ProductController@view');
