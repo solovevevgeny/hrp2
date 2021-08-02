@@ -19,6 +19,7 @@ class OffersSeeder extends Seeder
         $offer->title = "Воздуховод отопителя";
         $offer->parent_id = 1;
         $offer->warehouse_id = 1;
+        $offer->count = 10;
         $offer->save();
 
         $offer = new Offer();
@@ -26,6 +27,7 @@ class OffersSeeder extends Seeder
         $offer->title = "Воздуховод отопителя";
         $offer->parent_id = 1;
         $offer->warehouse_id = 2;
+        $offer->count = 20;
         $offer->save();
 
 
