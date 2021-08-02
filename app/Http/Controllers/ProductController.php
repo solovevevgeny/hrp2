@@ -20,8 +20,14 @@ class ProductController extends Controller
 
     public function view($id) 
     {
-        $product = Product::with('offers','offers.warehouse','offers.prices')->where('id','=',$id)->get();
+        $product = Product::with('offers','offers.warehouse','offers.prices', 'offers.prices.priceTypes')->where('id','=',$id)->get();
         return response ($product, 200);
+    }
+
+    public function category($id) 
+    {
+        $products = Product::with('offers')->where('category_id', '=', $id) -> get();
+        return response ($products, 200);
     }
 
 }
