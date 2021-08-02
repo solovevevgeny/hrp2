@@ -15,4 +15,9 @@ class Offer extends Model
         return $this->hasOne(\App\Models\Warehouse::class, 'id', 'warehouse_id');
     }
 
+    public function price() 
+    {
+        return $this->hasMany(\App\Models\Price::class, 'offer_id', 'id');
+    }
+
 }
