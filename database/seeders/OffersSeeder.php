@@ -12,8 +12,8 @@ class OffersSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
+    public function run(){
+
         $offer = new Offer();
         $offer->xml_id = "xml_id";
         $offer->title = "Воздуховод отопителя";
@@ -29,6 +29,5 @@ class OffersSeeder extends Seeder
         $offer->warehouse_id = 2;
         $offer->count = 10;
         $offer->save();
-
     }
 }
