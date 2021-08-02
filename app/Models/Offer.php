@@ -10,9 +10,9 @@ class Offer extends Model
     use HasFactory;
     protected $hidden = ['created_at', 'updated_at'];
 
-    public function warehouses() 
+    public function warehouse() 
     {
-        return $this->hasMany(\App\Models\Warehouse::class, 'id', 'warehouse_id');
+        return $this->hasOne(\App\Models\Warehouse::class, 'id', 'warehouse_id');
     }
 
 }
