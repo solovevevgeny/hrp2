@@ -17,12 +17,14 @@ class PricesSeeder extends Seeder
         $price = new Price();
         $price->price_type = 1;
         $price->offer_id = 1;
+        $price->offer_xml_id = "offer_xml_id";
         $price->price = 100;
         $price->save();
 
         $price = new Price();
         $price->price_type = 2;
         $price->offer_id = 1;
+        $price->offer_xml_id = "offer_xml_id";
         $price->price = 200;
         $price->save();
 

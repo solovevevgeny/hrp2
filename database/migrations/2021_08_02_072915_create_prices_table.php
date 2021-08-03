@@ -17,6 +17,7 @@ class CreatePricesTable extends Migration
             $table->id();
             $table->unsignedBigInteger("price_type");
             $table->unsignedBigInteger("offer_id");
+            $table->string("offer_xml_id");
             $table->double("price");
             $table->timestamps();
         });
