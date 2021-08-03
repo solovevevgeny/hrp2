@@ -20,4 +20,9 @@ class Offer extends Model
         return $this->hasMany(\App\Models\Price::class, 'offer_id', 'id');
     }
 
+    public function quality () 
+    {
+        return $this->hasOne(\App\Models\Quality::class, 'id', 'quality_id');
+    }
+
 }

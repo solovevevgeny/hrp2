@@ -20,7 +20,7 @@ class ProductController extends Controller
 
     public function view($id) 
     {
-        $product = Product::with('offers','offers.warehouse','offers.prices', 'offers.prices.priceTypes')->where('id','=',$id)->get();
+        $product = Product::with('offers','offers.warehouse','offers.prices', 'offers.prices.priceTypes', 'offers.quality')->where('id','=',$id)->get();
         return response ($product, 200);
     }
 
