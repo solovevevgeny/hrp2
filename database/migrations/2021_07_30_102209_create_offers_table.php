@@ -22,6 +22,12 @@ class CreateOffersTable extends Migration
             $table->integer("count");
             $table->timestamps();
         });
+
+
+        // Schema::table ('offers', function (Blueprint $table) {
+        //     $table->foreignId('warehouse_id_key')->references('id')->on('warehouses')->onDelete('cascase')->onUpdate('cascade');
+        // });
+
     }
 
     /**
