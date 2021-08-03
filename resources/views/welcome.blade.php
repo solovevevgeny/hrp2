@@ -18,6 +18,6 @@
         <li><a href="/public/api/category/1">/category/{id}</a></li>
     </ul>
 
-
+ 
 </body>
 </html>
