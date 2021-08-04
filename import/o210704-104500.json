@@ -1,0 +1,12 @@
+{
+    "type": "offer",
+    "action": "create",
+    "xml_id": "bd4da24b-0215-11ea-80d7-0cc47a817b0f;85f14d88-7092-11e9-a30f-00155d465102",
+    "payload": {
+        "parent_xml_id": "f57ee7d3-b356-11e9-ac70-00155d466801",
+        "warehouse_id": 1, 
+        "quality_id": 1, 
+        "count": 5
+    }
+}
+
